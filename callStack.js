@@ -9,3 +9,18 @@ Each function takes in one parameter, ‘k’.
 
 Think about how the call stack interprets your program, which function finished first?
 */
+
+let A = function (k) {
+    return B(k);
+}
+
+let B = function (k) {
+    return k ** 2;
+}
+
+// Same as above using arrow functions
+// let A = (k) => B(k)
+// let B = (k) => k ** 2
+
+console.log(A(10));
+console.log(B(10));
