@@ -14,7 +14,7 @@ function constExample(m) {
     return m * m;
 };
 
-constExample(10);
+constExample(5);
 
 
 //TODO: Write a linear time function
@@ -25,11 +25,15 @@ function linearExample(a) {
     }
 };
 
-linearExample(10);
+linearExample(11);
 
 
 //TODO: Write a Polynomial function
 // Polynomial *(Quadratic)* time function: O(n^k) *(O(n^2))*
+// nested for loop
+// This will make a 5X5 array, 5 arrays with 5 items each
+// adding more items to the array will compound the amount of arrays
+// dupe is short for duplicate
 const boxArray = items => {
     let box = [];
     for (let initial = 0, total = items.length; initial < total; initial++) {
